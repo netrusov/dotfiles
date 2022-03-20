@@ -17,3 +17,16 @@ do not show untracked files by default
 ```shell script
 dot config --local status.showUntrackedFiles no
 ```
+
+restore staged files and review diff
+
+```shell script
+dot restore --staged ~
+dot diff --diff-filter=M
+```
+
+resolve conflicts or just reset all tracked files to a commited state
+
+```shell script
+dot checkout -- ~
+```
