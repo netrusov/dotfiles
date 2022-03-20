@@ -1,4 +1,6 @@
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+function dot
+  git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME" $argv
+end
 
 alias dk='docker'
 alias dkc='docker-compose'
