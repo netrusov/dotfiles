@@ -1,3 +1,3 @@
 if type -q keychain
-  eval (keychain --eval --agents ssh)
+  eval (SHELL=(which fish) keychain --eval --agents ssh)
 end
