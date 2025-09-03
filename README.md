@@ -12,7 +12,12 @@ create alias
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
-do not show untracked files by default
+all files are ignored by default via `.gitignore`, so if you want to add new file, use `dot add` with an `-f` flag:
+```shell script
+dot add -f ~/path/to/file
+```
+
+same can be achieved without dedicated `.gitignore` file with one more manual step:
 
 ```shell script
 dot config --local status.showUntrackedFiles no
