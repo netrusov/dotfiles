@@ -1,9 +1,5 @@
-set --export EDITOR vim
-
-if test -d ~/.local/bin
-  set --export PATH "$HOME/.local/bin:$PATH"
-end
+set fish_greeting
 
 if status is-interactive
-  set -g fish_prompt_pwd_dir_length 0
+    set -g fish_prompt_pwd_dir_length 0
 end
